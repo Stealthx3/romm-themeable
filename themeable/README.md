@@ -89,7 +89,7 @@ These ship in the image, ready to choose without adding anything to the themes f
 | `cabinet` | Arcade | Classic cabinet red, yellow and black, a cabinet icon and a softly twinkling starfield |
 | `carbon` | Modern | Console-dashboard black with electric blue and teal, a play-badge icon |
 | `aurora` | Modern | Glassy teal, violet and coral over a drifting aurora, a gamepad icon |
-| `icerom` | Brand | IceRom's own look from its brand kit: Habitat blue and ice cyan, the cartridge mark, a starfield with ice chips drifting up, and matching covers |
+| `icerom` | Brand | IceRom's own look from its brand kit: Habitat blue and ice cyan, the cartridge mark, a starfield with ice chips drifting up, a small icebreaker crossing now and then, and matching covers |
 | `ember` | Warm | Charcoal and orange, a flame icon and rising sparks; the shortest pack to read as an example |
 | `contrast-dark` | Accessibility | White on pure black with a yellow focus ring; AAA text contrast and no motion |
 | `contrast-light` | Accessibility | Black on white with heavy borders; AAA text contrast and no motion |

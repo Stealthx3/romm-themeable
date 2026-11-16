@@ -904,6 +904,21 @@ test("every built-in wordmark has a color that reads on its dark and its light p
   }
 });
 
+test("built-in SVG files declare every namespace prefix they use", async () => {
+  const { findPacks, openPackFiles } = await import("../lib/packfiles.mjs");
+  for (const found of findPacks(join(here, "../packs"))) {
+    const files = openPackFiles(found);
+    for (const name of files.list().filter((n) => n.endsWith(".svg"))) {
+      const svg = files.read(name).toString("utf8");
+      const used = new Set([...svg.matchAll(/<\/?([A-Za-z][\w.-]*):[\w.-]+|\s([A-Za-z][\w.-]*):[\w.-]+=/g)].map((m) => m[1] ?? m[2]));
+      for (const prefix of used) {
+        if (prefix === "xmlns" || prefix === "xml") continue;
+        assert.ok(svg.includes(`xmlns:${prefix}=`), `${found.id}/${name} uses "${prefix}:" without declaring it, so browsers can't load it`);
+      }
+    }
+  }
+});
+
 test("built-in packs keep their brand color readable under white button text", async () => {
   const { findPacks } = await import("../lib/packfiles.mjs");
   for (const found of findPacks(join(here, "../packs"))) {

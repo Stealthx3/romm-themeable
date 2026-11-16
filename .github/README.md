@@ -19,16 +19,16 @@ romm-themeable is a fork of [RomM](https://github.com/rommapp/romm), the self-ho
 
 ## What it sets out to do
 
-- **Make RomM's look your own.** A server can wear one of ten built-in themes, a pack of your own, or a different pack on every page load, and each visitor can pick a theme for their own browser.
+- **Make RomM's look your own.** A server can wear one of eleven built-in themes, including IceRom's own,, a pack of your own, or a different pack on every page load, and each visitor can pick a theme for their own browser.
 - **Stay current with RomM.** Every stable RomM release is adopted automatically, checked and rebuilt, so running romm-themeable never means running an old RomM.
 - **Never leave the server worse off.** A broken or missing pack disables only itself, a change that fails to compile changes nothing, and RomM's own look is always one click or one URL away.
 - **Be usable by everyone.** Three of the built-in themes are designed for accessibility: High Contrast Dark, High Contrast Light, and Signal, which never relies on red against green.
 
 ## Screenshots
 
-**Ten built-in themes.** Each one restyles the whole interface, not just the login screen shown here. High Contrast Dark, High Contrast Light and Signal are the accessibility themes.
+**Eleven built-in themes,** shown here beside RomM's own look. Each one restyles the whole interface, not just the login screen. IceRom is the project's own theme, made from its brand kit, and High Contrast Dark, High Contrast Light and Signal are the accessibility themes.
 
-![The login screen in each of the ten built-in themes](../themeable/docs/images/built-in-themes.webp)
+![RomM's login screen as it ships, and in each of the eleven built-in themes](../themeable/docs/images/built-in-themes.webp)
 
 **Branding, in Administration.** Administrators upload a pack, choose the server's theme, set which groups Random draws from, and preview, rename or delete packs. Each row shows the pack's login background, wordmarks on dark and light, and tab icons. The page itself is wearing Neon.
 
